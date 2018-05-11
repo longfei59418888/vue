@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+
+
+
+
+
+//上下左右居中
+.flex-mixin-center-item{
+  align-items:center;
+  align-content:center;
+}
+// 换行
+.flex-mixin-wrap{
+  -webkit-flex-wrap:wrap;
+  flex-wrap:wrap;
+}
+.flex-mixin-center{
+  display: flex;
+  align-items:center;
+  justify-content:center;
+}
+.change_common_hide_header{
+  display: none !important;
+}
+.flex-mixin-center-align{
+  display: flex;
+  align-items:center;
+}

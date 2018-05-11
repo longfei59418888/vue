@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html id="html1">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <meta name="format-detection" content="telephone=no, email=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="full-screen" content="yes">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <title>title</title>
+  </head>
+  <script>
+    document.addEventListener('touchmove', function (ev) {
+      ev.preventDefault();
+    },false);
+    var deviceWidth = document.documentElement.clientWidth;
+    if(deviceWidth > 750) deviceWidth = 750;
+    document.documentElement.style.fontSize = deviceWidth /(7.5) + 'px';
+    var WEB_GLOBAL_CONFIG={
+      web_url:'',
+      web_netConnect:'',
+      web_version:'0.0.1  ',
+      web_debug_url:'',
+      web_font:deviceWidth /(100*7.5),
+      web_height:document.documentElement.clientHeight,
+      web_width:document.documentElement.clientWidth
+    }
+  </script>
+  <body>
+    <div id="app">
+      <router-view></router-view>
+    </div>
+
+    <!-- built files will be auto injected -->
+  </body>
+</html>

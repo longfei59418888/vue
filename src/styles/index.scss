@@ -1,0 +1,17 @@
+@import "variables.scss";
+@import "reset.scss";
+@import "mixins.scss";
+@import '_extend.scss';
+#app{
+    width: 100%;
+    height: 100%;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+input[type="number"]{
+    -moz-appearance: textfield;
+}
+body{font-size: .32rem}
+.container{position: absolute;width: 100%;height: 100%;left: 0;top: 0;}
